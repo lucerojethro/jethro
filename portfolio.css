@@ -109,7 +109,6 @@ body {
       align-items: center;
     }
   }
-  /* 🌞 Light Mode Styles */
   body.light-mode {
     background-color: #f1f1f1;
     color: #1f1f1f;
@@ -131,4 +130,5 @@ body {
   body.light-mode #theme-toggle {
     color: #1f1f1f;
   }
+
   
