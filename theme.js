@@ -1,8 +1,6 @@
-// Get button and body elements
 const toggleButton = document.getElementById('theme-toggle');
 const body = document.body;
 
-// Load saved theme if it exists
 const savedTheme = localStorage.getItem('theme');
 
 if (savedTheme === 'light-mode') {
@@ -12,7 +10,6 @@ if (savedTheme === 'light-mode') {
   toggleButton.textContent = '🌙';
 }
 
-// Toggle between light and dark mode
 toggleButton.addEventListener('click', () => {
   body.classList.toggle('light-mode');
   const isLight = body.classList.contains('light-mode');
@@ -20,3 +17,4 @@ toggleButton.addEventListener('click', () => {
   toggleButton.textContent = isLight ? '🌞' : '🌙';
   localStorage.setItem('theme', isLight ? 'light-mode' : '');
 });
+
